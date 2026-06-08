@@ -1,0 +1,271 @@
+/* General Reset & Warm Aesthetic */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #4a4a4a;
+    /* Warm gradient background to match blessing_2.png */
+    background: linear-gradient(135deg, #fdfbf7 0%, #f3ede2 100%);
+}
+
+/* Navigation */
+.nav-container {
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    flex-wrap: wrap;
+}
+
+.nav-logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #8b6e59;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #4a4a4a;
+    font-weight: 500;
+}
+
+.nav-cta {
+    background: #8b6e59;
+    color: #fff !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 100px 5%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.hero-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hero-badge {
+    color: #8b6e59;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.8rem;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin: 20px 0;
+    color: #2d2d2d;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #5a5a5a;
+}
+
+/* Stylish Geometric Frame */
+.hero-image-frame {
+    flex: 0 0 450px;
+    height: 550px;
+    background-color: #d1bba3;
+    padding: 10px;
+    clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+    overflow: hidden;
+    min-width: 280px;
+}
+
+.hero-profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.05);
+}
+
+/* Impact Section */
+.impact-section {
+    padding: 80px 5%;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #2d2d2d;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.impact-card {
+    padding: 40px;
+    background: #fff;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #e3d9cf;
+}
+
+.impact-card h3 {
+    font-size: 2.5rem;
+    color: #8b6e59;
+}
+
+/* Testimonials Carousel */
+.testimonials-section {
+    padding: 80px 5%;
+    text-align: center;
+    background: transparent;
+}
+
+.carousel-container {
+    max-width: 700px;
+    margin: 0 auto;
+    min-height: 150px;
+}
+
+.carousel-slide {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-slide.active {
+    display: block;
+    opacity: 1;
+}
+
+.carousel-slide p {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #4a4a4a;
+}
+
+.carousel-slide h4 {
+    margin-top: 15px;
+    color: #8b6e59;
+    font-weight: 700;
+}
+
+/* Booking Section */
+.booking-section {
+    padding: 80px 5%;
+}
+
+.booking-card {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 60px;
+    border-radius: 20px;
+    border: 1px solid #e3d9cf;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    box-shadow: 0 15px 30px rgba(139, 110, 89, 0.1);
+}
+
+.booking-cta {
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+}
+
+.btn-primary {
+    background: #8b6e59;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #8b6e59;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    border: 2px solid #8b6e59;
+    margin-left: 20px;
+}
+
+.booking-note {
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: #7a7a7a;
+}
+
+/* Minimal Contact Section (Added for consistency) */
+.social-contact {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #8b6e59;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+.footer {
+    padding: 40px;
+    text-align: center;
+    background: #2d2d2d;
+    color: #fdfbf7;
+}
+
+.footer a {
+    color: #d1bba3;
+}
