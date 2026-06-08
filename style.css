@@ -10,7 +10,7 @@ body {
     line-height: 1.6;
     color: #4a4a4a;
     /* Warm gradient background to match blessing_2.png */
-    background: linear-gradient(135deg, #fdfbf7 0%, #f3ede2 100%);
+    background: linear-gradient(135deg, #ddd0bb 0%, #f3ede2 100%);
 }
 
 /* Navigation */
